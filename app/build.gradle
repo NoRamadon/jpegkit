@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId 'com.jpegkit.app'
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
+dependencies {
+    implementation project(':jpegkit')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}
